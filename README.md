@@ -265,8 +265,4 @@ docker-compose up --build
 - **MLOps & Tracking**: MLflow, Joblib
 - **Testing & Containerization**: Pytest, Docker, Docker Compose
 
----
-
-## 📄 License
-Distributed under the **MIT License**. See `LICENSE` for details.
 
