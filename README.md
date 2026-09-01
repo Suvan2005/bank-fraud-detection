@@ -15,35 +15,12 @@ An enterprise-grade, real-time Machine Learning system designed to inspect banki
 
 ## 📸 Website & Dashboard Preview
 
-### 1. Real-Time Risk Simulator & System KPI Metrics
-> Live transaction simulation interface with real-time operational status, model evaluation metrics (ROC-AUC: `0.8512`, F1-Score: `0.7765`), and risk tier thresholds.
-<p align="center">
-  <img src="docs/screenshots/01_dashboard_overview.png" alt="FraudShield Dashboard Overview" width="95%" />
-</p>
+<img width="959" height="535" alt="Screenshot 2026-09-01 115818" src="https://github.com/user-attachments/assets/4960159a-d675-4a74-b341-527a15ae420b" />
+<img width="959" height="531" alt="Screenshot 2026-09-01 115837" src="https://github.com/user-attachments/assets/aa3dbc77-1234-47c2-bac6-5b9225f4bbb3" />
+<img width="959" height="545" alt="Screenshot 2026-09-01 115853" src="https://github.com/user-attachments/assets/f2605d21-0a05-4b95-9d25-8dbf46f5a992" />
+<img width="959" height="502" alt="Screenshot 2026-09-01 115907" src="https://github.com/user-attachments/assets/78202de6-4ecf-449f-8971-467b799c6e97" />
 
----
 
-### 2. Transaction Parameter Input Form
-> Comprehensive banking risk inputs including customer profile, transaction amounts, merchant types, foreign transaction indicators, and historical velocity counters.
-<p align="center">
-  <img src="docs/screenshots/02_transaction_input_form.png" alt="Transaction Input Form" width="95%" />
-</p>
-
----
-
-### 3. Calibrated Risk Score Gauge & Automated Action
-> Real-time inference output featuring a dynamic visual risk gauge (Risk Score: `100/100`), automated triage decision (`BLOCK`), and instant transaction risk signals.
-<p align="center">
-  <img src="docs/screenshots/03_fraud_risk_score_gauge.png" alt="Fraud Risk Gauge and Decision" width="95%" />
-</p>
-
----
-
-### 4. Explainable AI (XAI) — Local SHAP Feature Attribution
-> Granular breakdown of individual feature contributions showing exact factors driving the high-risk score (e.g., high amount-to-average ratio, distance from home, and lack of authentication).
-<p align="center">
-  <img src="docs/screenshots/04_shap_feature_importance.png" alt="SHAP Feature Attribution" width="95%" />
-</p>
 
 ---
 
