@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/License-MIT-green.style=for-the-badge" alt="License" />
 </p>
 
-An enterprise-grade, real-time Machine Learning system designed to inspect banking transactions, predict fraud probabilities ($P(\text{fraud})$), compute calibrated **Risk Scores ($0 - 100$)**, assign automated triage actions (**`Approve`**, **`Review`**, **`Block`**), and generate explainable **SHAP (SHapley Additive exPlanations)** feature attributions.
+An enterprise-grade, real-time Machine Learning system designed to inspect banking transactions, predict fraud probabilities, compute calibrated **Risk Scores ($0 - 100$)**, assign automated triage actions (**`Approve`**, **`Review`**, **`Block`**), and generate explainable **SHAP (SHapley Additive exPlanations)** feature attributions.
 
 ---
 
