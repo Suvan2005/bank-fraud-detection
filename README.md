@@ -6,6 +6,7 @@
   <img src="https://img.shields.io/badge/Streamlit-1.25%2B-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
   <img src="https://img.shields.io/badge/XGBoost-2.0%2B-EB5424?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost" />
   <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/License-MIT-green.style=for-the-badge" alt="License" />
 </p>
 
 An enterprise-grade, real-time Machine Learning system designed to inspect banking transactions, predict fraud probabilities ($P(\text{fraud})$), compute calibrated **Risk Scores ($0 - 100$)**, assign automated triage actions (**`Approve`**, **`Review`**, **`Block`**), and generate explainable **SHAP (SHapley Additive exPlanations)** feature attributions.
@@ -14,44 +15,34 @@ An enterprise-grade, real-time Machine Learning system designed to inspect banki
 
 ## 📸 Website & Dashboard Preview
 
-> *Place your application screenshots in the `docs/screenshots/` folder to display them below.*
-
-### 1. Real-Time Transaction Risk Simulator
-> Evaluate single transactions on the fly, visualize the calibrated risk gauge, and inspect instant SHAP local feature attribution explanations.
+### 1. Real-Time Risk Simulator & System KPI Metrics
+> Live transaction simulation interface with real-time operational status, model evaluation metrics (ROC-AUC: `0.8512`, F1-Score: `0.7765`), and risk tier thresholds.
 <p align="center">
-  <img src="docs/screenshots/realtime_simulator.png" alt="Real-Time Transaction Simulator" width="90%" />
+  <img src="docs/screenshots/01_dashboard_overview.png" alt="FraudShield Dashboard Overview" width="95%" />
 </p>
 
 ---
 
-### 2. Batch Transaction CSV Analyzer
-> Upload transaction batches in CSV format, perform automated high-throughput bulk inference, analyze risk score distributions, and export tagged reports.
+### 2. Transaction Parameter Input Form
+> Comprehensive banking risk inputs including customer profile, transaction amounts, merchant types, foreign transaction indicators, and historical velocity counters.
 <p align="center">
-  <img src="docs/screenshots/batch_analyzer.png" alt="Batch CSV Analyzer" width="90%" />
+  <img src="docs/screenshots/02_transaction_input_form.png" alt="Transaction Input Form" width="95%" />
 </p>
 
 ---
 
-### 3. Fraud Analytics & Risk Intelligence Hub
-> High-level executive KPI metrics, fraud patterns across merchant categories, transaction velocity spikes, and temporal fraud heatmaps.
+### 3. Calibrated Risk Score Gauge & Automated Action
+> Real-time inference output featuring a dynamic visual risk gauge (Risk Score: `100/100`), automated triage decision (`BLOCK`), and instant transaction risk signals.
 <p align="center">
-  <img src="docs/screenshots/fraud_analytics.png" alt="Fraud Analytics Dashboard" width="90%" />
+  <img src="docs/screenshots/03_fraud_risk_score_gauge.png" alt="Fraud Risk Gauge and Decision" width="95%" />
 </p>
 
 ---
 
-### 4. Model Performance Benchmark & Global Explainability
-> Compare ROC-AUC, PR-AUC, and F1-Scores across Logistic Regression, Random Forest, XGBoost, and LightGBM with global SHAP summary feature importance.
+### 4. Explainable AI (XAI) — Local SHAP Feature Attribution
+> Granular breakdown of individual feature contributions showing exact factors driving the high-risk score (e.g., high amount-to-average ratio, distance from home, and lack of authentication).
 <p align="center">
-  <img src="docs/screenshots/model_performance.png" alt="Model Performance and SHAP Explainability" width="90%" />
-</p>
-
----
-
-### 5. Interactive FastAPI REST Documentation (`/docs`)
-> OpenAPI Swagger interface supporting sub-millisecond single and bulk JSON transaction payload scoring.
-<p align="center">
-  <img src="docs/screenshots/fastapi_docs.png" alt="FastAPI Swagger Documentation" width="90%" />
+  <img src="docs/screenshots/04_shap_feature_importance.png" alt="SHAP Feature Attribution" width="95%" />
 </p>
 
 ---
@@ -301,3 +292,4 @@ docker-compose up --build
 
 ## 📄 License
 Distributed under the **MIT License**. See `LICENSE` for details.
+
