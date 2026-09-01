@@ -6,7 +6,6 @@
   <img src="https://img.shields.io/badge/Streamlit-1.25%2B-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
   <img src="https://img.shields.io/badge/XGBoost-2.0%2B-EB5424?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost" />
   <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/License-MIT-green.style=for-the-badge" alt="License" />
 </p>
 
 An enterprise-grade, real-time Machine Learning system designed to inspect banking transactions, predict fraud probabilities ($P(\text{fraud})$), compute calibrated **Risk Scores ($0 - 100$)**, assign automated triage actions (**`Approve`**, **`Review`**, **`Block`**), and generate explainable **SHAP (SHapley Additive exPlanations)** feature attributions.
