@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Distribution / packaging
+.env
+.venv
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Data files
+data/raw/*.csv
+data/processed/*.csv
+
+# Model artifacts (keep structure, ignore binaries)
+models/*.joblib
+models/*.json
+mlruns/
+
+# Logs
+*.log
+app.log
+
+# Test reports
+junit/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,55 @@
+project:
+  name: "Banking Fraud Detection System"
+  version: "1.0.0"
+
+paths:
+  raw_data: "data/raw/transactions.csv"
+  processed_data: "data/processed/features.csv"
+  model_dir: "models/"
+  best_model_path: "models/best_model.joblib"
+  preprocessor_path: "models/preprocessor.joblib"
+  explainer_path: "models/explainer.joblib"
+  feature_names_path: "models/feature_names.joblib"
+  metrics_path: "models/model_metrics.json"
+  mlflow_tracking_uri: "file:./mlruns"
+
+data_generation:
+  n_samples: 12000
+  fraud_ratio: 0.045
+  random_state: 42
+
+features:
+  numerical:
+    - "transaction_amount"
+    - "customer_age"
+    - "account_balance"
+    - "txn_count_1h"
+    - "txn_count_24h"
+    - "avg_amount_30d"
+    - "amount_to_avg_ratio"
+    - "amount_to_balance_ratio"
+    - "distance_from_home_km"
+    - "prev_fraud_count"
+    - "hour_of_day"
+  categorical:
+    - "transaction_type"
+    - "merchant_category"
+    - "device_type"
+    - "authentication_method"
+    - "is_foreign_transaction"
+    - "is_high_risk_time"
+  target: "is_fraud"
+
+risk_rules:
+  low_threshold: 30.0
+  high_threshold: 70.0
+  actions:
+    low: "Approve"
+    medium: "Review"
+    high: "Block"
+
+training:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+  primary_metric: "roc_auc"
