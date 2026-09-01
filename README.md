@@ -158,7 +158,7 @@ bank-fraud-detection/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/bank-fraud-detection.git
+git clone https://github.com/Suvan2005/bank-fraud-detection.git
 cd bank-fraud-detection
 
 # Create a virtual environment
